@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+$("#b1").click(function(){
+$("#d1").hide();
+}
+);
+
+
+
+$("#show").click(function(){
+$("#d1").show();
+$("#d1").animate({top:'-=20px',height:'150px',
+    width:'150px'});
+
+});
+
+$("#toggle").click(function(){
+$("#d1").show();
+$("#w1").animate({height:'toggle'});
+});
+
+$("#fadeIn").click(function(){
+	$("#div1").fadeIn();
+	$("#div2").fadeIn("slow");
+	$("#div3").fadeIn(1000);
+});
+$("#fadeOut").click(function(){
+	$("#div1").fadeOut();
+	$("#div2").fadeOut("slow");
+	$("#div3").fadeOut(1000);
+});
+
+
+
+});
+</script>
+</head>
+
+<body>
+
+<button id="b1" type="button">hide</button>
+<input id="show" type="button" value="show" />
+
+
+<div id="w1" style="width:1378px;height:300px;background-color:silver;text-align:center;position:fixed;top:0px;">togglexxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div>
+
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+
+<div id="d1" style="background-color:yellow;width:280px;height:300px;position:fixed;top:400px;left:500px;">Weclcome To jQuery!
+<button id="toggle" type="button">拉起窗帘</button>
+<button id="fadeIn" type="button">放下珠帘
+</button>
+<button id="fadeOut" type="button">收起珠帘</button>
+
+
+</div>
+</body>
+</html>
