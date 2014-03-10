@@ -1,0 +1,9 @@
+
+为了能使用VS的智能感知，须要引用文件：jquery-1.7.1-vsdoc.js，
+由于演示代码默认的引入方式为：
+ <script src="../scripts/jquery.js" type="text/javascript"></script>
+为方便调用，当前项目中，暂时把jquery-1.7.1-vsdoc.js，命名为jquery.js了。
+
+修改为直接调用：
+ <script type="text/javascript" src="../scripts/jquery-1.7.1-vsdoc.js"></script>
+要设置web.config中的请求处理，禁止在浏览器访问到该文件；

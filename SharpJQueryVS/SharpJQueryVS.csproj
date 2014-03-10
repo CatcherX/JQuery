@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B4BEF19-043E-4F68-96EA-7954ADC9EDF6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpJQueryVS</RootNamespace>
+    <AssemblyName>SharpJQueryVS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\1.禁用页面的右键菜单.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\10.设置div在屏幕中央.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\11.创建自己的选择器.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\12.关闭所有动画效果.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\13.检测鼠标的右键和左键.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\14.回车提交表单.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\15.设置全局Ajax参数.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\16.获取选中的下拉框.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\17.切换复选框.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\18.使用siblings%28%29来选择同辈元素.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\19.检查某个元素是否包含某个类或是元素.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\2.新窗口打开页面.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\20.在一段时间之后自动隐藏或关闭元素.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\21.使用Firefox和Firebug来记录事件日志.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\22.为任何与选择器相匹配的元素绑定事件.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\23.使用css钩子.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\24. %24.proxy%28%29的使用.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\25.限制Text-Area域中的字符的个数.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\28.从元素中除去HTML.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\29.扩展String对象的方法.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\3.判断浏览器类型.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\4.输入框文字获取和失去焦点.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\5.返回头部滑动动画.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\6.获取鼠标位置.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\7.判断元素是否存在.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\8.点击div也可以跳转.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\9.根据浏览器大小添加不同的样式.html" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\img\file-blue.gif" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\img\file-orange.gif" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\img\file-red.gif" />
+    <Content Include="demo\Ch9_11_Unit11\jquery技巧\img\window.gif" />
+    <Content Include="demo\Ch1\1-1%28simple%29.html" />
+    <Content Include="demo\Ch1\1-2%28window.onload%29.html" />
+    <Content Include="demo\Ch1\1-3%28document.ready%29.html" />
+    <Content Include="demo\Ch1\1-4导航栏\1-4-1初始化.html" />
+    <Content Include="demo\Ch1\1-4导航栏\1-4-2.html" />
+    <Content Include="demo\Ch1\1-4导航栏\1-4-3优化后.html" />
+    <Content Include="demo\Ch1\1-4导航栏\css\default.css" />
+    <Content Include="demo\Ch1\1-5%28表格%29.html" />
+    <Content Include="demo\Ch1\1-6%28DOM对象和jQuery对象%29.html" />
+    <Content Include="demo\Ch1\1-7论坛注册\1-7-1%28DOM方式%29.html" />
+    <Content Include="demo\Ch1\1-7论坛注册\1-7-2%28jQuery方式%29.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\1-8-1.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\1-8-2.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\1-8-3.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\1-8-4.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\1-8-5.html" />
+    <Content Include="demo\Ch1\1-8解决冲突\lib\prototype.js" />
+    <Content Include="demo\Ch2\2-10-子元素过滤选择器.html" />
+    <Content Include="demo\Ch2\2-11-表单对象属性过滤选择器.html" />
+    <Content Include="demo\Ch2\2-12-表单选择器.html" />
+    <Content Include="demo\Ch2\2-13：解决章头的3个例子\2-13-1.html" />
+    <Content Include="demo\Ch2\2-13：解决章头的3个例子\2-13-2.html" />
+    <Content Include="demo\Ch2\2-13：解决章头的3个例子\2-13-3.html" />
+    <Content Include="demo\Ch2\2-14：选择器注意几点\2-14-1特殊符号.html" />
+    <Content Include="demo\Ch2\2-14：选择器注意几点\2-14-2符号%40.html" />
+    <Content Include="demo\Ch2\2-14：选择器注意几点\2-14-3选择器中的空格.html" />
+    <Content Include="demo\Ch2\2-15：案例研究\css\default.css" />
+    <Content Include="demo\Ch2\2-15：案例研究\img\down.gif" />
+    <Content Include="demo\Ch2\2-15：案例研究\img\up.gif" />
+    <Content Include="demo\Ch2\2-15：案例研究\第1步 - 设计结构和样式，初始化.html" />
+    <Content Include="demo\Ch2\2-15：案例研究\第2步 - 隐藏品牌.html" />
+    <Content Include="demo\Ch2\2-15：案例研究\第3步 - 用户点击“显示全部品牌”按钮.html" />
+    <Content Include="demo\Ch2\2-15：案例研究\第4步 - 全部和精简的切换.html" />
+    <Content Include="demo\Ch2\2-1：初探jQuery\2-1-1.html" />
+    <Content Include="demo\Ch2\2-1：初探jQuery\2-1-2.html" />
+    <Content Include="demo\Ch2\2-2：jQuery选择的优势-完善的处理机制%28预留退路%29\2-2-1.html" />
+    <Content Include="demo\Ch2\2-2：jQuery选择的优势-完善的处理机制%28预留退路%29\2-2-2.html" />
+    <Content Include="demo\Ch2\2-2：jQuery选择的优势-完善的处理机制%28预留退路%29\2-2-3.html" />
+    <Content Include="demo\Ch2\2-3：3个JavaScript例子\2-3-1.html" />
+    <Content Include="demo\Ch2\2-3：3个JavaScript例子\2-3-2.html" />
+    <Content Include="demo\Ch2\2-3：3个JavaScript例子\2-3-3.html" />
+    <Content Include="demo\Ch2\2-4-基本选择器.html" />
+    <Content Include="demo\Ch2\2-5-层次选择器.html" />
+    <Content Include="demo\Ch2\2-6-基本过滤选择器.html" />
+    <Content Include="demo\Ch2\2-7-内容过滤选择器.html" />
+    <Content Include="demo\Ch2\2-8-可见性过滤选择器.html" />
+    <Content Include="demo\Ch2\2-9-属性选择器%28补充%29.html" />
+    <Content Include="demo\Ch2\2-9-属性选择器.html" />
+    <Content Include="demo\Ch2\css\style.css" />
+    <Content Include="demo\Ch2\lib\assist.js" />
+    <Content Include="demo\Ch3\3-0初始化结构\3-0.html" />
+    <Content Include="demo\Ch3\3-a10_设置和获取HTML,文本和值\3-10-1.html" />
+    <Content Include="demo\Ch3\3-a10_设置和获取HTML,文本和值\3-10-2-1.html" />
+    <Content Include="demo\Ch3\3-a10_设置和获取HTML,文本和值\3-10-2-2.html" />
+    <Content Include="demo\Ch3\3-a10_设置和获取HTML,文本和值\3-10-3.html" />
+    <Content Include="demo\Ch3\3-a10_设置和获取HTML,文本和值\3-10-4.html" />
+    <Content Include="demo\Ch3\3-a11遍历节点树\3-11-1.html" />
+    <Content Include="demo\Ch3\3-a11遍历节点树\3-11-2.html" />
+    <Content Include="demo\Ch3\3-a11遍历节点树\3-11-3.html" />
+    <Content Include="demo\Ch3\3-a11遍历节点树\3-11-4.html" />
+    <Content Include="demo\Ch3\3-a12CSS-DOM\3-12-1.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\1-1-文字提示-第一步.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\1-2-文字提示-第二步.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\1-3-文字提示-第三步.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\2-1-图片提示-第一步.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\2-2-图片提示-第二步.html" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_1.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_1_bigger.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_2.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_2_bigger.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_3.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_3_bigger.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_4.jpg" />
+    <Content Include="demo\Ch3\3-a13案例研究-超链接提示和图片提示效果\images\apple_4_bigger.jpg" />
+    <Content Include="demo\Ch3\3-1查找节点\3-1.html" />
+    <Content Include="demo\Ch3\3-2创建节点\3-2-1.html" />
+    <Content Include="demo\Ch3\3-2创建节点\3-2-2.html" />
+    <Content Include="demo\Ch3\3-2创建节点\3-2-3.html" />
+    <Content Include="demo\Ch3\3-3插入节点\3-3-1-插入节点.html" />
+    <Content Include="demo\Ch3\3-3插入节点\3-3-2-移动节点.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-1.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-2.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-3.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-4-1.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-4-2.html" />
+    <Content Include="demo\Ch3\3-4删除节点\3-4-5.html" />
+    <Content Include="demo\Ch3\3-5复制节点\3-5-1.html" />
+    <Content Include="demo\Ch3\3-5复制节点\3-5-2.html" />
+    <Content Include="demo\Ch3\3-6替换节点\3-6.html" />
+    <Content Include="demo\Ch3\3-7包裹节点\3-7-1.html" />
+    <Content Include="demo\Ch3\3-7包裹节点\3-7-2.html" />
+    <Content Include="demo\Ch3\3-7包裹节点\3-7-3-1.html" />
+    <Content Include="demo\Ch3\3-7包裹节点\3-7-3-2.html" />
+    <Content Include="demo\Ch3\3-7包裹节点\3-7-4.html" />
+    <Content Include="demo\Ch3\3-8属性操作\3-8.html" />
+    <Content Include="demo\Ch3\3-9样式操作\3-9-1.html" />
+    <Content Include="demo\Ch4\0-ready%28%29\4-0-1加载时间对比.html" />
+    <Content Include="demo\Ch4\0-ready%28%29\demo.jpg" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-1.html" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-2.html" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-3.html" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-4.html" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-5-1-window.onload.html" />
+    <Content Include="demo\Ch4\1-DOM准备\4-1-5-2-document.ready.html" />
+    <Content Include="demo\Ch4\b10-案例演示\demo1-初始化.html" />
+    <Content Include="demo\Ch4\b10-案例演示\demo2-【快速】连续点击带bug.html" />
+    <Content Include="demo\Ch4\b10-案例演示\demo3-正确实例.html" />
+    <Content Include="demo\Ch4\b10-案例演示\img\01.jpg" />
+    <Content Include="demo\Ch4\b10-案例演示\img\02.jpg" />
+    <Content Include="demo\Ch4\b10-案例演示\img\03.jpg" />
+    <Content Include="demo\Ch4\b10-案例演示\img\04.jpg" />
+    <Content Include="demo\Ch4\b10-案例演示\img\b5df2063502528.t1.jpg" />
+    <Content Include="demo\Ch4\b10-案例演示\img\btn_cartoon.gif" />
+    <Content Include="demo\Ch4\b10-案例演示\style.css" />
+    <Content Include="demo\Ch4\2-事件绑定\4-2-1-初始化状态.html" />
+    <Content Include="demo\Ch4\2-事件绑定\4-2-2-点击展开.html" />
+    <Content Include="demo\Ch4\2-事件绑定\4-2-3-点击展开2.html" />
+    <Content Include="demo\Ch4\2-事件绑定\4-2-4-鼠标滑过.html" />
+    <Content Include="demo\Ch4\2-事件绑定\4-2-5-展开，简写方式.html" />
+    <Content Include="demo\Ch4\3-合成事件\4-3-1合成事件hover.html" />
+    <Content Include="demo\Ch4\3-合成事件\4-3-2合成事件toggle.html" />
+    <Content Include="demo\Ch4\3-合成事件\4-3-3合成事件toggle.html" />
+    <Content Include="demo\Ch4\3-合成事件\4-3-4合成事件toggle.html" />
+    <Content Include="demo\Ch4\4-事件冒泡\4-4-1冒泡.html" />
+    <Content Include="demo\Ch4\4-事件冒泡\4-4-2停止事件冒泡.html" />
+    <Content Include="demo\Ch4\4-事件冒泡\4-4-3-1阻止默认行为.html" />
+    <Content Include="demo\Ch4\4-事件冒泡\4-4-3-2阻止默认行为-false.html" />
+    <Content Include="demo\Ch4\4-事件冒泡\4-4-4停止事件冒泡 - false.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-1 event.type.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-2 event.target.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-3 event.pageX event.pageY.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-4 event.which.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-5 event.which2.html" />
+    <Content Include="demo\Ch4\5-事件对象的属性\4-5-6 event.metaKey.html" />
+    <Content Include="demo\Ch4\6-移除事件\4-6-1.html" />
+    <Content Include="demo\Ch4\6-移除事件\4-6-2.html" />
+    <Content Include="demo\Ch4\6-移除事件\4-6-3.html" />
+    <Content Include="demo\Ch4\6-移除事件\4-6-4.html" />
+    <Content Include="demo\Ch4\7-模拟操作\4-7-1 trigger.html" />
+    <Content Include="demo\Ch4\7-模拟操作\4-7-2 trigger.html" />
+    <Content Include="demo\Ch4\7-模拟操作\4-7-3 trigger.html" />
+    <Content Include="demo\Ch4\7-模拟操作\4-7-4 triggerHandler.html" />
+    <Content Include="demo\Ch4\8-其它用法\4-8-1事件类型多个.html" />
+    <Content Include="demo\Ch4\8-其它用法\4-8-2事件命名空间, 便于管理.html" />
+    <Content Include="demo\Ch4\8-其它用法\4-8-3相同事件名称,不同命名空间执行方法.html" />
+    <Content Include="demo\Ch4\9-动画\9-1%28show和hide%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-10%28css%28%29排队%29-queue%28%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-10%28css%28%29排队%29-回调函数.html" />
+    <Content Include="demo\Ch4\9-动画\9-11%28stop方法%29\demo1-.stop%28快速滑过有问题%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-11%28stop方法%29\demo2-.stop%28%29%28解决问题%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-11%28stop方法%29\demo3-.stop%28%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-11%28stop方法%29\demo4-.stop%28%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-11%28stop方法%29\demo5-.stop%28%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-12%28判断是否动画%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-13%28延迟动画%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-14%28toggle%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-15%28slideToggle%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-16%28fadeTo%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-17%28fadeToggle%29.html" />
+    <Content Include="demo\Ch4\9-动画\a9-18%28animate仿其他方法%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-2%28show和hide带时间%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-3%28fade%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-4%28slide%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-5%28animate简单使用%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-6%28animate多重动画1%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-7%28animate多重动画2%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-8%28综合动画%29.html" />
+    <Content Include="demo\Ch4\9-动画\9-9%28css%28%29未排队%29.html" />
+    <Content Include="demo\Ch4\css\style.css" />
+    <Content Include="demo\Ch5\demo1-文本框得到失去焦点\demo1.html" />
+    <Content Include="demo\Ch5\demo1-文本框得到失去焦点\demo2.html" />
+    <Content Include="demo\Ch5\zdemo10-选项卡\css\style.css" />
+    <Content Include="demo\Ch5\zdemo10-选项卡\demo1.html" />
+    <Content Include="demo\Ch5\zdemo10-选项卡\demo2.html" />
+    <Content Include="demo\Ch5\zdemo10-选项卡\demo3.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\default.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_0.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_1.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_2.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_3.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_4.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\skin_5.css" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\css\theme.gif" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\demo1.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\demo2.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\demo3.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\demo4.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\demo5.html" />
+    <Content Include="demo\Ch5\zdemo11-网页换肤\js\jquery.cookie.js" />
+    <Content Include="demo\Ch5\demo2-多行文本框高度变化\demo1-1文本框高度变化.html" />
+    <Content Include="demo\Ch5\demo2-多行文本框高度变化\demo1-2文本框高度变化.html" />
+    <Content Include="demo\Ch5\demo2-多行文本框高度变化\demo2-文本框内容滚动.html" />
+    <Content Include="demo\Ch5\demo3-复选框全选反选\demo1.html" />
+    <Content Include="demo\Ch5\demo3-复选框全选反选\demo2.html" />
+    <Content Include="demo\Ch5\demo3-复选框全选反选\demo3.html" />
+    <Content Include="demo\Ch5\demo4-下拉框左右选择\demo1.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\css\style.css" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo1.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo2.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo3.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo4.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo5.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\demo6.html" />
+    <Content Include="demo\Ch5\demo5-表单验证\img\reg3.gif" />
+    <Content Include="demo\Ch5\demo5-表单验证\img\reg4.gif" />
+    <Content Include="demo\Ch5\demo6-表格变色\css\style.css" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo1.html" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo2.html" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo3.html" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo4.html" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo5.html" />
+    <Content Include="demo\Ch5\demo6-表格变色\demo6.html" />
+    <Content Include="demo\Ch5\demo7-表格展开伸缩\css\style.css" />
+    <Content Include="demo\Ch5\demo7-表格展开伸缩\demo1.html" />
+    <Content Include="demo\Ch5\demo7-表格展开伸缩\demo2.html" />
+    <Content Include="demo\Ch5\demo8-表格内容过滤\css\style.css" />
+    <Content Include="demo\Ch5\demo8-表格内容过滤\demo1.html" />
+    <Content Include="demo\Ch5\demo8-表格内容过滤\demo2.html" />
+    <Content Include="demo\Ch5\demo8-表格内容过滤\demo3.html" />
+    <Content Include="demo\Ch5\demo9-控制字体大小\css\style.css" />
+    <Content Include="demo\Ch5\demo9-控制字体大小\demo1.html" />
+    <Content Include="demo\Ch5\demo9-控制字体大小\demo2.html" />
+    <Content Include="demo\Ch6\asp\demo1-javascript\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo1-javascript\test.asp" />
+    <Content Include="demo\Ch6\asp\demo2-load\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo2-load\demo2.html" />
+    <Content Include="demo\Ch6\asp\demo2-load\demo3.html" />
+    <Content Include="demo\Ch6\asp\demo2-load\test.html" />
+    <Content Include="demo\Ch6\asp\demo3-get\get1.asp" />
+    <Content Include="demo\Ch6\asp\demo3-get\get1.html" />
+    <Content Include="demo\Ch6\asp\demo3-get\get2.asp" />
+    <Content Include="demo\Ch6\asp\demo3-get\get2.html" />
+    <Content Include="demo\Ch6\asp\demo3-get\get3.asp" />
+    <Content Include="demo\Ch6\asp\demo3-get\get3.html" />
+    <Content Include="demo\Ch6\asp\demo3-get\get4.html" />
+    <Content Include="demo\Ch6\asp\demo4-post\post1.asp" />
+    <Content Include="demo\Ch6\asp\demo4-post\post1.html" />
+    <Content Include="demo\Ch6\asp\demo4-post\post2.asp" />
+    <Content Include="demo\Ch6\asp\demo4-post\post2.html" />
+    <Content Include="demo\Ch6\asp\demo4-post\post3.asp" />
+    <Content Include="demo\Ch6\asp\demo4-post\post3.html" />
+    <Content Include="demo\Ch6\asp\demo4-post\post4.html" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\demo2.html" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\demo3.html" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\demo4.html" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\jquery.color.js" />
+    <Content Include="demo\Ch6\asp\demo5-getScriptJSON\test.js" />
+    <Content Include="demo\Ch6\asp\demo6-ajax\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo6-ajax\demo2.html" />
+    <Content Include="demo\Ch6\asp\demo6-ajax\demo3.html" />
+    <Content Include="demo\Ch6\asp\demo6-ajax\test.js" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\demo2.html" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\demo3.html" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\demo4-firebug.html" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\demo5.html" />
+    <Content Include="demo\Ch6\asp\demo7-serialize%28%29\get1.asp" />
+    <Content Include="demo\Ch6\asp\demo8-AjaxEvent\demo1.html" />
+    <Content Include="demo\Ch6\asp\demo8-AjaxEvent\get1.asp" />
+    <Content Include="demo\Ch6\asp\scripts\jquery.js" />
+    <Content Include="demo\Ch6\jsp\demo1-javascript\demo1.html" />
+    <Content Include="demo\Ch6\jsp\demo2-load\demo1.html" />
+    <Content Include="demo\Ch6\jsp\demo2-load\demo2.html" />
+    <Content Include="demo\Ch6\jsp\demo2-load\demo3.html" />
+    <Content Include="demo\Ch6\jsp\demo2-load\test.html" />
+    <Content Include="demo\Ch6\jsp\demo3-get\get1.html" />
+    <Content Include="demo\Ch6\jsp\demo3-get\get2.html" />
+    <Content Include="demo\Ch6\jsp\demo3-get\get3.html" />
+    <Content Include="demo\Ch6\jsp\demo3-get\get4.html" />
+    <Content Include="demo\Ch6\jsp\demo4-post\post1.html" />
+    <Content Include="demo\Ch6\jsp\demo4-post\post2.html" />
+    <Content Include="demo\Ch6\jsp\demo4-post\post3.html" />
+    <Content Include="demo\Ch6\jsp\demo4-post\post4.html" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\demo1.html" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\demo2.html" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\demo3.html" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\demo4.html" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\jquery.color.js" />
+    <Content Include="demo\Ch6\jsp\demo5-getScriptJSON\test.js" />
+    <Content Include="demo\Ch6\jsp\demo6-ajax\demo1.html" />
+    <Content Include="demo\Ch6\jsp\demo6-ajax\demo2.html" />
+    <Content Include="demo\Ch6\jsp\demo6-ajax\demo3.html" />
+    <Content Include="demo\Ch6\jsp\demo6-ajax\test.js" />
+    <Content Include="demo\Ch6\jsp\demo7-serialize%28%29\demo1.html" />
+    <Content Include="demo\Ch6\jsp\demo7-serialize%28%29\demo2.html" />
+    <Content Include="demo\Ch6\jsp\demo7-serialize%28%29\demo3.html" />
+    <Content Include="demo\Ch6\jsp\demo7-serialize%28%29\demo4-firebug.html" />
+    <Content Include="demo\Ch6\jsp\demo7-serialize%28%29\demo5.html" />
+    <Content Include="demo\Ch6\jsp\demo8-AjaxEvent\demo1.html" />
+    <Content Include="demo\Ch6\jsp\scripts\jquery.js" />
+    <Content Include="demo\Ch6\php\demo1-javascript\demo1.html" />
+    <Content Include="demo\Ch6\php\demo2-load\demo1.html" />
+    <Content Include="demo\Ch6\php\demo2-load\demo2.html" />
+    <Content Include="demo\Ch6\php\demo2-load\demo3.html" />
+    <Content Include="demo\Ch6\php\demo2-load\test.html" />
+    <Content Include="demo\Ch6\php\demo3-get\get1.html" />
+    <Content Include="demo\Ch6\php\demo3-get\get2.html" />
+    <Content Include="demo\Ch6\php\demo3-get\get3.html" />
+    <Content Include="demo\Ch6\php\demo3-get\get4.html" />
+    <Content Include="demo\Ch6\php\demo4-post\post1.html" />
+    <Content Include="demo\Ch6\php\demo4-post\post2.html" />
+    <Content Include="demo\Ch6\php\demo4-post\post3.html" />
+    <Content Include="demo\Ch6\php\demo4-post\post4.html" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\demo1.html" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\demo2.html" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\demo3.html" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\demo4.html" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\jquery.color.js" />
+    <Content Include="demo\Ch6\php\demo5-getScriptJSON\test.js" />
+    <Content Include="demo\Ch6\php\demo6-ajax\demo1.html" />
+    <Content Include="demo\Ch6\php\demo6-ajax\demo2.html" />
+    <Content Include="demo\Ch6\php\demo6-ajax\demo3.html" />
+    <Content Include="demo\Ch6\php\demo6-ajax\test.js" />
+    <Content Include="demo\Ch6\php\demo7-serialize%28%29\demo1.html" />
+    <Content Include="demo\Ch6\php\demo7-serialize%28%29\demo2.html" />
+    <Content Include="demo\Ch6\php\demo7-serialize%28%29\demo3.html" />
+    <Content Include="demo\Ch6\php\demo7-serialize%28%29\demo4-firebug.html" />
+    <Content Include="demo\Ch6\php\demo7-serialize%28%29\demo5.html" />
+    <Content Include="demo\Ch6\php\demo8-AjaxEvent\demo1.html" />
+    <Content Include="demo\Ch6\php\demo9-chat\demo.xml" />
+    <Content Include="demo\Ch6\php\demo9-chat\demo1.html" />
+    <Content Include="demo\Ch6\php\demo9-chat\sql.sql" />
+    <Content Include="demo\Ch6\php\scripts\jquery.js" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-1.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-2.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-3.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-4.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-5.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-6.html" />
+    <Content Include="demo\Ch7\7-1-Validation\7-1-7.html" />
+    <Content Include="demo\Ch7\7-1-Validation\images\checked.gif" />
+    <Content Include="demo\Ch7\7-1-Validation\images\loading.gif" />
+    <Content Include="demo\Ch7\7-1-Validation\images\unchecked.gif" />
+    <Content Include="demo\Ch7\7-1-Validation\lib\jquery.metadata.js" />
+    <Content Include="demo\Ch7\7-1-Validation\lib\jquery.validate.js" />
+    <Content Include="demo\Ch7\7-1-Validation\lib\jquery.validate.messages_cn.js" />
+    <Content Include="demo\Ch7\7-2-Form\demo1.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo2.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo3.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo4.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo5.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo6.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo7.html" />
+    <Content Include="demo\Ch7\7-2-Form\demo8.html" />
+    <Content Include="demo\Ch7\7-2-Form\index.html" />
+    <Content Include="demo\Ch7\7-2-Form\lib\jquery.form.js" />
+    <Content Include="demo\Ch7\7-3-simplemodal\css\basic.css" />
+    <Content Include="demo\Ch7\7-3-simplemodal\css\box.css" />
+    <Content Include="demo\Ch7\7-3-simplemodal\css\demo.css" />
+    <Content Include="demo\Ch7\7-3-simplemodal\img\box.png" />
+    <Content Include="demo\Ch7\7-3-simplemodal\index.html" />
+    <Content Include="demo\Ch7\7-3-simplemodal\js\jquery.simplemodal.js" />
+    <Content Include="demo\Ch7\7-4-cookie\1.html" />
+    <Content Include="demo\Ch7\7-4-cookie\2.html" />
+    <Content Include="demo\Ch7\7-4-cookie\js\jquery.cookie.js" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\1-1-快速上手.html" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\1-2-快速上手.html" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\2-跟单击事件冲突.html" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\3-获得排列顺序sortable.html" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\4-获得排列顺序sortable.html" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\js\jquery-ui-1.8.18.custom.js" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\js\jquery.ui.core.js" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\js\jquery.ui.mouse.js" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\js\jquery.ui.sortable.js" />
+    <Content Include="demo\Ch7\7-5-jQueryUI-sortable\js\jquery.ui.widget.js" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo1-1-color.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo1-2-color.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo1-3-color.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo2-1-原始代码.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo2-2-插件代码.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo3-ltrim和rtrim.html" />
+    <Content Include="demo\Ch7\7-6-编写插件\demo4-between.html" />
+    <Content Include="demo\Ch8\detail.html" />
+    <Content Include="demo\Ch8\images\adindex.gif" />
+    <Content Include="demo\Ch8\images\ads\1.jpg" />
+    <Content Include="demo\Ch8\images\ads\2.jpg" />
+    <Content Include="demo\Ch8\images\ads\3.jpg" />
+    <Content Include="demo\Ch8\images\ads\4.jpg" />
+    <Content Include="demo\Ch8\images\ads\5.jpg" />
+    <Content Include="demo\Ch8\images\advertise.jpg" />
+    <Content Include="demo\Ch8\images\box.png" />
+    <Content Include="demo\Ch8\images\btn_cart.png" />
+    <Content Include="demo\Ch8\images\chos.gif" />
+    <Content Include="demo\Ch8\images\common.jpg" />
+    <Content Include="demo\Ch8\images\down.gif" />
+    <Content Include="demo\Ch8\images\headerbg.png" />
+    <Content Include="demo\Ch8\images\hot.gif" />
+    <Content Include="demo\Ch8\images\loadingAnimation.gif" />
+    <Content Include="demo\Ch8\images\logo.gif" />
+    <Content Include="demo\Ch8\images\look.gif" />
+    <Content Include="demo\Ch8\images\pro_img\blue.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_one.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_one_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_one_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_three.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_three_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_three_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_two.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_two_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\blue_two_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_one.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_one_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_one_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_two.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_two_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\green_two_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_one.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_one_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_one_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_three.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_three_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_three_small.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_two.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_two_big.jpg" />
+    <Content Include="demo\Ch8\images\pro_img\yellow_two_small.jpg" />
+    <Content Include="demo\Ch8\images\star-matrix.gif" />
+    <Content Include="demo\Ch8\images\theme.gif" />
+    <Content Include="demo\Ch8\images\up.gif" />
+    <Content Include="demo\Ch8\images\upload\20120216.jpg" />
+    <Content Include="demo\Ch8\images\upload\20120217.jpg" />
+    <Content Include="demo\Ch8\images\upload\20120218.jpg" />
+    <Content Include="demo\Ch8\images\upload\20120219.png" />
+    <Content Include="demo\Ch8\images\upload\20120220.png" />
+    <Content Include="demo\Ch8\images\zoom.gif" />
+    <Content Include="demo\Ch8\images\zoomlens.gif" />
+    <Content Include="demo\Ch8\images\zoomloader.gif" />
+    <Content Include="demo\Ch8\index.html" />
+    <Content Include="demo\Ch8\scripts\ad.js" />
+    <Content Include="demo\Ch8\scripts\addhot.js" />
+    <Content Include="demo\Ch8\scripts\changeSkin.js" />
+    <Content Include="demo\Ch8\scripts\finish.js" />
+    <Content Include="demo\Ch8\scripts\imgHover.js" />
+    <Content Include="demo\Ch8\scripts\imgSlide.js" />
+    <Content Include="demo\Ch8\scripts\input.js" />
+    <Content Include="demo\Ch8\scripts\jquery.cookie.js" />
+    <Content Include="demo\Ch8\scripts\jquery.jqzoom.js" />
+    <Content Include="demo\Ch8\scripts\jquery.simplemodal.js" />
+    <Content Include="demo\Ch8\scripts\jquery.thickbox.js" />
+    <Content Include="demo\Ch8\scripts\nav.js" />
+    <Content Include="demo\Ch8\scripts\sizeAndprice.js" />
+    <Content Include="demo\Ch8\scripts\star.js" />
+    <Content Include="demo\Ch8\scripts\switchColor.js" />
+    <Content Include="demo\Ch8\scripts\switchImg.js" />
+    <Content Include="demo\Ch8\scripts\tab.js" />
+    <Content Include="demo\Ch8\scripts\tooltip.js" />
+    <Content Include="demo\Ch8\scripts\use_jqzoom.js" />
+    <Content Include="demo\Ch8\styles\box.css" />
+    <Content Include="demo\Ch8\styles\main.css" />
+    <Content Include="demo\Ch8\styles\reset.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_0.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_1.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_2.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_3.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_4.css" />
+    <Content Include="demo\Ch8\styles\skin\skin_5.css" />
+    <Content Include="demo\Ch8\styles\thickbox.css" />
+    <Content Include="demo\Ch9\css\images\ajax-loader.png" />
+    <Content Include="demo\Ch9\css\images\icons-18-black.png" />
+    <Content Include="demo\Ch9\css\images\icons-18-white.png" />
+    <Content Include="demo\Ch9\css\images\icons-36-black.png" />
+    <Content Include="demo\Ch9\css\images\icons-36-white.png" />
+    <Content Include="demo\Ch9\css\jquery.mobile-1.0.1.min.css" />
+    <Content Include="demo\Ch9\css\jquery.mobile.structure-1.0.1.min.css" />
+    <Content Include="demo\Ch9\index-1.html" />
+    <Content Include="demo\Ch9\index-2.html" />
+    <Content Include="demo\Ch9\js\jquery.js" />
+    <Content Include="demo\Ch9\js\jquery.mobile-1.0.1.min.js" />
+    <Content Include="demo\flB-firebug\css\a.css" />
+    <Content Include="demo\flB-firebug\css\b.css" />
+    <Content Include="demo\flB-firebug\css\c.css" />
+    <Content Include="demo\flB-firebug\firebug1.html" />
+    <Content Include="demo\flB-firebug\firebug2.html" />
+    <Content Include="demo\flB-firebug\firebug3.html" />
+    <Content Include="demo\flB-firebug\firebug4.html" />
+    <Content Include="demo\flB-firebug\firebug5.html" />
+    <Content Include="demo\flB-firebug\firebug6.html" />
+    <Content Include="demo\flB-firebug\firebug7.html" />
+    <Content Include="demo\flB-firebug\firebug8.html" />
+    <Content Include="demo\flB-firebug\暗箱操作\css\dots.png" />
+    <Content Include="demo\flB-firebug\暗箱操作\css\left.png" />
+    <Content Include="demo\flB-firebug\暗箱操作\css\right.png" />
+    <Content Include="demo\flB-firebug\暗箱操作\css\scrollable.css" />
+    <Content Include="demo\flB-firebug\暗箱操作\demo.html" />
+    <Content Include="demo\flE-AjaxXML\ajax.xml" />
+    <Content Include="demo\flE-AjaxXML\demo.html" />
+    <Content Include="demo\injectJs.txt" />
+    <Content Include="demo\modelTest.html" />
+    <Content Include="demo\scripts\jquery-1.7.1-vsdoc.js" />
+    <Content Include="demo\Ch6\asp\Web.config" />
+    <None Include="demo\scripts\jquery.js.2" />
+    <Content Include="demo\scripts\jquery-1.7.1.js" />
+    <Content Include="demo\scripts\jquery-1.7.1.min.js" />
+    <Content Include="demo\scripts\jquery.js" />
+    <Content Include="demo\说明.txt" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="demo\Ch1\1-9编辑器语法提示插件\aptana-jquery.ruble\jquery.1.4.2.sdocml" />
+    <None Include="demo\Ch1\1-9编辑器语法提示插件\aptana-jquery.ruble\jquery.1.6.2.sdocml" />
+    <None Include="demo\Ch1\1-9编辑器语法提示插件\jQuery_api_for_dw3\jQuery_api_for_dw3.mxp" />
+    <None Include="demo\Ch1\1-9编辑器语法提示插件\jQuery_api_for_dw4\jQuery_api_for_dw4\jQuery_api_for_dw4.mxp" />
+    <None Include="demo\Ch6\asp\demo5-getScriptJSON\test.json" />
+    <None Include="demo\Ch6\asp\demo6-ajax\test.json" />
+    <None Include="demo\Ch6\jsp\demo1-javascript\test.jsp" />
+    <None Include="demo\Ch6\jsp\demo3-get\get1.jsp" />
+    <None Include="demo\Ch6\jsp\demo3-get\get2.jsp" />
+    <None Include="demo\Ch6\jsp\demo3-get\get3.jsp" />
+    <None Include="demo\Ch6\jsp\demo4-post\post1.jsp" />
+    <None Include="demo\Ch6\jsp\demo4-post\post2.jsp" />
+    <None Include="demo\Ch6\jsp\demo4-post\post3.jsp" />
+    <None Include="demo\Ch6\jsp\demo5-getScriptJSON\test.json" />
+    <None Include="demo\Ch6\jsp\demo6-ajax\test.json" />
+    <None Include="demo\Ch6\jsp\demo7-serialize%28%29\get1.jsp" />
+    <None Include="demo\Ch6\jsp\demo8-AjaxEvent\get1.jsp" />
+    <None Include="demo\Ch6\php\demo1-javascript\test.php">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="demo\Ch6\php\demo3-get\get1.php" />
+    <None Include="demo\Ch6\php\demo3-get\get2.php" />
+    <None Include="demo\Ch6\php\demo3-get\get3.php" />
+    <None Include="demo\Ch6\php\demo4-post\post1.php" />
+    <None Include="demo\Ch6\php\demo4-post\post2.php" />
+    <None Include="demo\Ch6\php\demo4-post\post3.php" />
+    <None Include="demo\Ch6\php\demo5-getScriptJSON\test.json" />
+    <None Include="demo\Ch6\php\demo6-ajax\test.json" />
+    <None Include="demo\Ch6\php\demo7-serialize%28%29\get1.php" />
+    <None Include="demo\Ch6\php\demo8-AjaxEvent\get1.php" />
+    <None Include="demo\Ch6\php\demo9-chat\backend.php" />
+    <None Include="demo\Ch7\7-2-Form\ajax2.php" />
+    <None Include="demo\Ch7\7-2-Form\demo.php" />
+    <None Include="demo\Ch7\7-2-Form\html.php" />
+    <None Include="demo\Ch7\7-2-Form\json.php" />
+    <None Include="demo\Ch7\7-2-Form\xml.php" />
+    <None Include="demo\Ch7\7-5-jQueryUI-sortable\sortable.php" />
+    <None Include="demo\flB-firebug\firebug4.php" />
+    <None Include="demo\README.DOC" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1181</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
